@@ -63,25 +63,18 @@ cd Book-API
 go mod tidy
 ```
 ### 4️⃣ Database Setup
-This project uses SQLite and comes with a default database file.
 
-Database file: crud.db
-
-No additional setup required
-
-The database will be automatically used when the application starts
-
-To reset the database, simply delete crud.db and restart the app.
+> ⚠️ The SQLite database file (`crud.db`) is ignored by Git to avoid committing local data.
 
 ### 5️⃣ Run the Application
 ```bash
 go run main.go
+```
 The server will start at:
 
-```arduino
-http://localhost:8080
+*http://localhost:8080*
 ### 📁 Project Structure
-
+```bash
 Book-API/
 ├── config/         # Database configuration
 ├── controllers/    # Request handlers
@@ -91,25 +84,29 @@ Book-API/
 ├── go.mod
 ├── go.sum
 └── main.go         # Application entry point
+```
 ### 📡 API Endpoints
-Base URL
 
-http://localhost:8080
-Method	Endpoint	Description
-GET	/books	Get all books
-GET	/books/{id}	Get book by ID
-POST	/books	Create a new book
-PUT	/books/{id}	Update an existing book
-DELETE	/books/{id}	Delete a book
+*http://localhost:8080*
+
+{
+    #Method | 	#Endpoint | 	#Description
+    GET | 	/books | 	Get all books
+    GET | 	/books/{id} | 	Get book by ID
+    POST | 	/books | 	Create a new book
+    PUT | 	/books/{id} | 	Update an existing book
+    DELETE | 	/books/{id} | 	Delete a book 
+ }
 
 ### 📄 Request & Response Example
 Create Book
 Request
 
-bash
+```bash
 POST /books
 Content-Type: application/json
-json
+```
+```json
 {
   "title": "Learn Golang",
   "author": "Hsnrzky",
@@ -117,6 +114,7 @@ json
   "year": 2025,
   "isbn": "9781234567890"
 }
+```
 Response
 
 json
