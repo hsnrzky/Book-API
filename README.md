@@ -53,16 +53,16 @@ Make sure you have installed:
 
 ### 2️⃣ Clone the Repository
 
-***```bash
+```bash
 git clone https://github.com/hsnrzky/Book-API.git
-cd Book-API```***
+cd Book-API
+```
 
 ### 3️⃣ Install Dependencies
 ```bash
-Copy code
 go mod tidy
-
-4️⃣ Database Setup
+```
+### 4️⃣ Database Setup
 This project uses SQLite and comes with a default database file.
 
 Database file: crud.db
@@ -73,18 +73,15 @@ The database will be automatically used when the application starts
 
 To reset the database, simply delete crud.db and restart the app.
 
-5️⃣ Run the Application
-bash
-Copy code
+### 5️⃣ Run the Application
+```bash
 go run main.go
 The server will start at:
 
-arduino
-Copy code
+```arduino
 http://localhost:8080
-📁 Project Structure
-python
-Copy code
+### 📁 Project Structure
+
 Book-API/
 ├── config/         # Database configuration
 ├── controllers/    # Request handlers
@@ -94,11 +91,9 @@ Book-API/
 ├── go.mod
 ├── go.sum
 └── main.go         # Application entry point
-📡 API Endpoints
+### 📡 API Endpoints
 Base URL
 
-arduino
-Copy code
 http://localhost:8080
 Method	Endpoint	Description
 GET	/books	Get all books
@@ -107,16 +102,14 @@ POST	/books	Create a new book
 PUT	/books/{id}	Update an existing book
 DELETE	/books/{id}	Delete a book
 
-📄 Request & Response Example
+### 📄 Request & Response Example
 Create Book
 Request
 
 bash
-Copy code
 POST /books
 Content-Type: application/json
 json
-Copy code
 {
   "title": "Learn Golang",
   "author": "Hsnrzky",
@@ -127,7 +120,6 @@ Copy code
 Response
 
 json
-Copy code
 {
   "id": 1,
   "title": "Learn Golang",
