@@ -53,13 +53,15 @@ Make sure you have installed:
 
 ### 2️⃣ Clone the Repository
 
-```bash
+***```bash
 git clone https://github.com/hsnrzky/Book-API.git
-cd Book-API
-3️⃣ Install Dependencies
-bash
+cd Book-API```***
+
+### 3️⃣ Install Dependencies
+```bash
 Copy code
 go mod tidy
+
 4️⃣ Database Setup
 This project uses SQLite and comes with a default database file.
 
