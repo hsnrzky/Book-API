@@ -1,2 +1,17 @@
+# Database files
 crud.db
-.gitignore
+
+# Go build output
+/bin/
+/build/
+*.exe
+*.out
+
+# Go test cache
+*.test
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
