@@ -80,7 +80,6 @@ Book-API/
 ├── controllers/    # Request handlers
 ├── models/         # Data models
 ├── routes/         # API routes
-├── crud.db         # SQLite database
 ├── go.mod
 ├── go.sum
 └── main.go         # Application entry point
