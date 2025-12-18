@@ -89,14 +89,14 @@ Book-API/
 
 *http://localhost:8080*
 
-{
-    #Method | 	#Endpoint | 	#Description
-    GET | 	/books | 	Get all books
-    GET | 	/books/{id} | 	Get book by ID
-    POST | 	/books | 	Create a new book
-    PUT | 	/books/{id} | 	Update an existing book
-    DELETE | 	/books/{id} | 	Delete a book 
- }
+
+#Method | 	#Endpoint | 	#Description
+GET | 	/books | 	Get all books
+GET | 	/books/{id} | 	Get book by ID
+POST | 	/books | 	Create a new book
+PUT | 	/books/{id} | 	Update an existing book
+DELETE | 	/books/{id} | 	Delete a book 
+
 
 ### 📄 Request & Response Example
 Create Book
