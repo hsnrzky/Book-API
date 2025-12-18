@@ -90,7 +90,7 @@ Book-API/
 *http://localhost:8080*
 
 
-| #Method | 	#Endpoint | 	#Description |
+| Method | 	Endpoint | 	Description |
 | :------------ |:---------------:| :-----:|
 | GET | 	/books | 	Get all books |
 | GET | 	/books/{id} | 	Get book by ID |
@@ -100,8 +100,7 @@ Book-API/
 
 
 ### 📄 Request & Response Example
-Create Book
-Request
+Create Book Request
 
 ```bash
 POST /books
@@ -118,7 +117,7 @@ Content-Type: application/json
 ```
 Response
 
-json
+```json
 {
   "id": 1,
   "title": "Learn Golang",
@@ -127,16 +126,17 @@ json
   "year": 2025,
   "isbn": "9781234567890"
 }
-📝 Notes
+```
+### 📝 Notes
 This API does not use authentication
 
 Designed for learning and demonstration purposes
 
 Easy to extend with JWT, Swagger, or PostgreSQL
 
-🤝 Contribution
+### 🤝 Contribution
 Contributions are welcome!
 Feel free to open an issue or submit a pull request.
 
-📄 License
+### 📄 License
 This project is open-source and available for educational purposes.
